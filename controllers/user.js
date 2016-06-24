@@ -119,6 +119,16 @@ exports.getAccount = (req, res) => {
 };
 
 /**
+ * GET /dashbpard
+ * Dashboard page.
+ */
+exports.getDashboard = (req, res) => {
+  res.render('account/dashboard', {
+    title: 'User Dashboard'
+  });
+};
+
+/**
  * POST /account/profile
  * Update profile information.
  */
