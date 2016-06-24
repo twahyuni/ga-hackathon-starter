@@ -113,7 +113,7 @@ exports.postSignup = (req, res, next) => {
  * Profile page.
  */
 exports.getAccount = (req, res) => {
-  res.render('account/userProfile', {
+  res.render('account/userprofile', {
     title: 'Account Management'
   });
 };
