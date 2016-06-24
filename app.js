@@ -123,7 +123,7 @@ app.get('/account', passportConfig.isAuthenticated, userController.getAccount);
 
 app.get('/dashboard', passportConfig.isAuthenticated, userController.getDashboard);
 
-app.post('/account/profile', passportConfig.isAuthenticated, userController.postUpdateProfile);
+app.post('/account/user-profile', passportConfig.isAuthenticated, userController.postUpdateProfile);
 app.post('/account/password', passportConfig.isAuthenticated, userController.postUpdatePassword);
 app.post('/account/delete', passportConfig.isAuthenticated, userController.postDeleteAccount);
 app.get('/account/unlink/:provider', passportConfig.isAuthenticated, userController.getOauthUnlink);
